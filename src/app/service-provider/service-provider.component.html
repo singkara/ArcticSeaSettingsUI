@@ -1,1 +1,10 @@
-<p>service-provider works!</p>
+<h3>Capabilities</h3>
+<form wps-example-form="ngForm">
+    <div class="form-group">
+        <label for="version">Version</label>
+        <select class="form-control" [(ngModel)]="selectedVersion" id="version" name="version" ngModel required>
+            <option *ngFor="let version of versions" [value]="version" selected="selected">{{version}}</option>
+        </select>
+    </div>
+
+</form>

@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-provider.component.css']
 })
 export class ServiceProviderComponent implements OnInit {
+  selectedVersion: string;
+  versions: ['abc'];
 
   constructor() { }
 

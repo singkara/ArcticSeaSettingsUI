@@ -7,9 +7,20 @@ import {TabsetComponent} from 'ngx-bootstrap/tabs';
   styleUrls: ['./service-identification.component.css']
 })
 export class ServiceIdentificationComponent implements OnInit {
+  title: string;
+  abstract: string;
+  keyword: string;
+  serviceType: string;
+  serviceVersion: string;
+  fees: string;
+  accessConstraints: string;
+  keywords = ['OGC', 'WPS 2.0'];
+  selectedKeyword: string;
 
 
-  constructor() { }
+  constructor() {
+    this.title = 'title';
+  }
 
   ngOnInit(): void {
   }
