@@ -14,12 +14,13 @@ export class ServiceIdentificationComponent implements OnInit {
   serviceVersion: string;
   fees: string;
   accessConstraints: string;
-  keywords = ['OGC', 'WPS 2.0'];
+  keywords: string[];
   selectedKeyword: string;
 
 
   constructor() {
     this.title = 'title';
+    this.keywords = ['OGC', 'WPS 2.0'];
   }
 
   ngOnInit(): void {

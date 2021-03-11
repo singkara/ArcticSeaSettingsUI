@@ -6,8 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-provider.component.css']
 })
 export class ServiceProviderComponent implements OnInit {
-  selectedVersion: string;
-  versions: ['abc'];
+
+  providerName: string;
+  providerSite: string;
+  individualName: string;
+  positionName: string;
+  fax: string;
+  phone: string;
+  deliveryPoint: string;
+  city: string;
+  postalCode: string;
+  country: string;
+  electronicMailAddress: string;
+  onlineResource: string;
+  hoursOfService: string;
+  administrativeArea: string;
 
   constructor() { }
 

@@ -1,10 +1,101 @@
-<h3>Capabilities</h3>
-<form wps-example-form="ngForm">
-    <div class="form-group">
-        <label for="version">Version</label>
-        <select class="form-control" [(ngModel)]="selectedVersion" id="version" name="version" ngModel required>
-            <option *ngFor="let version of versions" [value]="version" selected="selected">{{version}}</option>
-        </select>
-    </div>
 
-</form>
+<div class="container center_div">
+    <form>
+        <div class="form-group">
+            <label  for="providerName">Provider Name</label>
+            <input [(ngModel)]="providerName" type="text" class="form-control" id="providerName" [ngModelOptions]="{standalone: true}">
+        </div>
+
+        <div class="form-group">
+            <label for="providerSite">Provider Site</label>
+            <input [(ngModel)]="providerSite" type="text" class="form-control" id="providerSite" [ngModelOptions]="{standalone: true}">
+        </div>
+
+
+
+        <div class="container sub_div">
+            <label>Service Contact</label>
+            <form>
+                <div class="form-group">
+                    <label  for="individualName">Individual Name</label>
+                    <input [(ngModel)]="individualName" type="text" class="form-control" id="individualName" [ngModelOptions]="{standalone: true}">
+                </div>
+
+                <div class="form-group">
+                    <label for="positionName">Position Name</label>
+                    <input [(ngModel)]="positionName" type="text" class="form-control" id="positionName" [ngModelOptions]="{standalone: true}">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="container sub_div">
+            <label>Contact Info</label>
+            <form>
+                <div class="form-group">
+                    <label  for="fax">Fax</label>
+                    <input [(ngModel)]="fax" type="text" class="form-control" id="fax" [ngModelOptions]="{standalone: true}">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input [(ngModel)]="phone" type="text" class="form-control" id="phone" [ngModelOptions]="{standalone: true}">
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="container sub_div">
+            <label>Address</label>
+            <form>
+                <div class="form-group">
+                    <label  for="deliveryPoint">Delivery Point</label>
+                    <input [(ngModel)]="deliveryPoint" type="text" class="form-control" id="deliveryPoint" [ngModelOptions]="{standalone: true}">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input [(ngModel)]="city" type="text" class="form-control" id="city" [ngModelOptions]="{standalone: true}">
+                </div>
+
+
+                <div class="form-group">
+                    <label  for="administrativeArea">Administrative Area</label>
+                    <input [(ngModel)]="administrativeArea" type="text" class="form-control" id="administrativeArea" [ngModelOptions]="{standalone: true}">
+                </div>
+
+                <div class="form-group">
+                    <label for="postalCode">Postal Code</label>
+                    <input [(ngModel)]="postalCode" type="text" class="form-control" id="postalCode" [ngModelOptions]="{standalone: true}">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input [(ngModel)]="country" type="text" class="form-control" id="country" [ngModelOptions]="{standalone: true}">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="electronicMailAddress">Electronic Mail Address</label>
+                    <input [(ngModel)]="electronicMailAddress" type="text" class="form-control" id="electronicMailAddress" [ngModelOptions]="{standalone: true}">
+                </div>
+
+
+            </form>
+        </div>
+
+
+        <div class="form-group">
+            <label for="onlineResource">Online Resource</label>
+            <input [(ngModel)]="onlineResource" type="text" class="form-control" id="onlineResource" [ngModelOptions]="{standalone: true}">
+        </div>
+
+
+        <div class="form-group">
+            <label for="hoursOfService">Hours of Service</label>
+            <input [(ngModel)]="hoursOfService" type="text" class="form-control" id="hoursOfService" [ngModelOptions]="{standalone: true}">
+        </div>
+
+    </form>
+</div>

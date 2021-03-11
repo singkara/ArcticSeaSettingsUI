@@ -3,48 +3,42 @@
   <form>
     <div class="form-group">
       <label  for="title">Title</label>
-      <input [(ngModel)]="title" type="text" class="form-control" id="title" >
+      <input [(ngModel)]="title" type="text" class="form-control" id="title" [ngModelOptions]="{standalone: true}">
     </div>
 
     <div class="form-group">
       <label for="abstract">Abstract</label>
-      <input [(ngModel)]="abstract" type="text" class="form-control" id="abstract" >
+      <input [(ngModel)]="abstract" type="text" class="form-control" id="abstract" [ngModelOptions]="{standalone: true}">
     </div>
 
     <div class="form-group">
 
-    <select class="form-control" [(ngModel)]="selectedKeyword" id="version" name="version" ngModel required>
+      <label for="keyword">Keywords</label>
+      <select class="form-control" [(ngModel)]="selectedKeyword" id="keyword" name="version" ngModel required [ngModelOptions]="{standalone: true}">
       <option *ngFor="let keyword of keywords" [value]="keyword" selected="selected">{{keyword}}</option>
     </select>
     </div>
 
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Keywords</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>WPS 2.0</option>
-        <option>OGC</option>
-      </select>
-    </div>
 
 
     <div class="form-group">
       <label for="serviceType">ServiceType</label>
-      <input type="email" class="form-control" id="serviceType" [(ngModel)]="serviceType">
+      <input type="email" class="form-control" id="serviceType" [(ngModel)]="serviceType" [ngModelOptions]="{standalone: true}">
     </div>
 
     <div class="form-group">
       <label for="serviceVersion">Service Version</label>
-      <input type="email" class="form-control" id="serviceVersion" [(ngModel)]="serviceVersion" >
+      <input type="email" class="form-control" id="serviceVersion" [(ngModel)]="serviceVersion" [ngModelOptions]="{standalone: true}">
     </div>
 
     <div class="form-group">
       <label for="fees">Fees</label>
-      <input type="email" class="form-control" id="fees"  [(ngModel)]="fees">
+      <input type="email" class="form-control" id="fees"  [(ngModel)]="fees" [ngModelOptions]="{standalone: true}">
     </div>
 
     <div class="form-group">
       <label for="accessConstraints">Access Constraints</label>
-      <input type="email" class="form-control" id="accessConstraints" [(ngModel)]="accessConstraints">
+      <input type="email" class="form-control" id="accessConstraints" [(ngModel)]="accessConstraints" [ngModelOptions]="{standalone: true}">
     </div>
 
   </form>
