@@ -10,6 +10,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {TabsModule} from 'ngx-bootstrap/tabs';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import {TabsModule} from 'ngx-bootstrap/tabs';
     MatFormFieldModule,
     MatSelectModule,
     ReactiveFormsModule,
-    TabsModule.forRoot()
+    MatButtonModule,
+    MatIconModule,
+    HttpClientModule,
+    TabsModule.forRoot(),
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

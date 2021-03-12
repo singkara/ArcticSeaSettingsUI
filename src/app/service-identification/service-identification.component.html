@@ -1,6 +1,6 @@
 
 <div class="container center_div">
-  <form>
+  <form style="border:1px solid black">
     <div class="form-group">
       <label  for="title">Title</label>
       <input [(ngModel)]="title" type="text" class="form-control" id="title" [ngModelOptions]="{standalone: true}">
@@ -12,14 +12,11 @@
     </div>
 
     <div class="form-group">
-
       <label for="keyword">Keywords</label>
       <select class="form-control" [(ngModel)]="selectedKeyword" id="keyword" name="version" ngModel required [ngModelOptions]="{standalone: true}">
       <option *ngFor="let keyword of keywords" [value]="keyword" selected="selected">{{keyword}}</option>
-    </select>
+      </select>
     </div>
-
-
 
     <div class="form-group">
       <label for="serviceType">ServiceType</label>
@@ -40,6 +37,8 @@
       <label for="accessConstraints">Access Constraints</label>
       <input type="email" class="form-control" id="accessConstraints" [(ngModel)]="accessConstraints" [ngModelOptions]="{standalone: true}">
     </div>
+
+    <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
 
   </form>
 </div>
