@@ -52,8 +52,4 @@ export class ServiceIdentificationComponent implements OnInit {
         this.toastr.success('Submitting service indentification details');
     }
 
-
-
-
-
 }
